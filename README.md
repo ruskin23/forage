@@ -2,7 +2,9 @@
 
 **Forage for knowledge.** A desktop reader that pulls research papers from arXiv, summarizes them with AI, learns what you care about, and scores every paper for relevance — so the work that matters rises to the top of your feed.
 
-![Forage Control Room](docs/screenshots/control-room.png)
+<p align="center">
+  <img src="docs/screenshots/reader.png" alt="Forage Reader — ranked feed of papers with AI relevance scores" width="780">
+</p>
 
 Forage is a single-user, bring-your-own-key desktop app for staying on top of research. Point it at an arXiv category and a date; it fetches that day's papers, downloads each one's LaTeX source, writes a plain-language summary, builds a profile from the papers you like and dismiss, and scores new papers against that profile.
 
@@ -24,8 +26,8 @@ It is built as an Electron app with a fully typed, event-driven pipeline and two
 
 | | |
 |---|---|
-| ![Run history](docs/screenshots/run-history.png)<br>Expanded run — per-step job timeline | ![Calendar](docs/screenshots/calendar.png)<br>Feed-aware date picker |
-| ![Feed detail](docs/screenshots/feed-detail.png)<br>Feed detail — per-paper step status | |
+| ![Paper detail](docs/screenshots/reader-detail.png)<br>Reader — AI summary, relevance, and score | ![Control Room](docs/screenshots/control-room.png)<br>Control Room — run the pipeline by date and step |
+| ![Run history](docs/screenshots/run-history.png)<br>Run history — per-step job timeline | ![Calendar](docs/screenshots/calendar.png)<br>Feed-aware date picker |
 
 ## How it works
 
