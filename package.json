@@ -1,0 +1,61 @@
+{
+  "name": "forage",
+  "productName": "Forage",
+  "version": "0.1.0",
+  "description": "Forage for knowledge — research papers, blogs, and more",
+  "main": ".vite/build/index.js",
+  "private": true,
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint src/"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ruskin Patel",
+    "email": "ruskin.patel23@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.1",
+    "@electron-forge/maker-rpm": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron-forge/plugin-vite": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/tar": "^6.1.13",
+    "@vitejs/plugin-react": "^5.1.4",
+    "electron": "40.6.1",
+    "eslint": "^10.0.2",
+    "tailwindcss": "^4.2.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.5.4",
+    "@unified-latex/unified-latex": "^1.8.3",
+    "@unified-latex/unified-latex-util-parse": "^1.8.3",
+    "@unified-latex/unified-latex-util-to-string": "^1.8.3",
+    "dotenv": "^17.4.2",
+    "electron-squirrel-startup": "^1.0.1",
+    "embedded-postgres": "^18.3.0-beta.17",
+    "fast-xml-parser": "^5.4.1",
+    "framer-motion": "^12.34.3",
+    "postgres": "^3.4.9",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tar": "^7.5.9",
+    "zustand": "^5.0.11"
+  }
+}

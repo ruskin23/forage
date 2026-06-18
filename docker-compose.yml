@@ -1,0 +1,33 @@
+# Local Postgres for Forage development.
+#
+# Usage:
+#   docker compose up -d         # start in background
+#   docker compose down          # stop (data persists in named volume)
+#   docker compose down -v       # stop and wipe data
+#
+# Connection string (matches .env default):
+#   postgres://forage:forage@localhost:5433/forage
+#
+# Mapped to host port 5433 so it does not collide with a native Postgres on 5432.
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: forage-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: forage
+      POSTGRES_PASSWORD: forage
+      POSTGRES_DB: forage
+    ports:
+      - "5433:5432"
+    volumes:
+      - forage_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U forage -d forage"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  forage_pg_data:
